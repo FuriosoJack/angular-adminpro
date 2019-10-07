@@ -1,6 +1,5 @@
 import {Routes, RouterModule} from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Graficas1Component } from './pages/graficas1/graficas1.component';
@@ -11,7 +10,6 @@ import { RegisterComponent } from './login/register.component';
 
 
 const appRoutes: Routes = [
-    
     {
         path: '',
         component: PagesComponent,
@@ -24,7 +22,7 @@ const appRoutes: Routes = [
                 component: ProgressComponent
             },
             {
-                path: 'grafica1',
+                path: 'graficas1',
                 component: Graficas1Component
             },
             {
