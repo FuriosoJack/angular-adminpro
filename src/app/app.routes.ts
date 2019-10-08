@@ -6,7 +6,7 @@ import { NotpagefountComponent } from './shared/notpagefount/notpagefount.compon
 import { RegisterComponent } from './login/register.component';
 
 
-
+ 
 const appRoutes: Routes = [
     {
         path: 'login',
