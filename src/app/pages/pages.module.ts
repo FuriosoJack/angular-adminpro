@@ -7,13 +7,16 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from '../componentes/incrementador/incrementador.component';
+import { ChartsModule } from 'ng2-charts';
+import { GraficaDonaComponent } from '../componentes/grafica-dona/grafica-dona.component';
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        IncrementadorComponent
+        IncrementadorComponent,
+        GraficaDonaComponent
     ],
     exports: [ //Son accesados desde fuera de este modulo
         DashboardComponent,
@@ -23,7 +26,8 @@ import { IncrementadorComponent } from '../componentes/incrementador/incrementad
     imports: [
         SharedModule,
         PAGES_ROUTES,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ]
 })
 
