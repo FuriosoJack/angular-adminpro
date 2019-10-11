@@ -37,7 +37,7 @@ export class IncrementadorComponent implements OnInit {
     this.textProgress.nativeElement.focus();
   }
 
-  onChange(newValue: number){
+  onChangereador(newValue: number){
     
     
    

@@ -3,7 +3,7 @@
     <div class="input-group-prepend" id="button-addon3">
         <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)"><i class="mdi mdi-minus"></i></button>
     </div>
-    <input #textProgres type="number" min="0" max="100" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4" name="progreso" [(ngModel)]="progreso" (ngModelChange)="onChange( $event )">
+    <input #textProgres type="number" min="0" max="100" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4" name="progreso" [(ngModel)]="progreso" (ngModelChange)="onChangereador( $event )">
     <div class="input-group-append" id="button-addon4">
         <button class="btn btn-primary" type="button" (click)="cambiarValor(+5)"><i class="mdi mdi-plus"></i></button>
 
