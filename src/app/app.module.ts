@@ -13,19 +13,26 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
 
+//servicios
+import { SettingsService } from './services/settings.service';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent  ],
+    RegisterComponent,
+    
+  ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
