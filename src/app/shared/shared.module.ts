@@ -3,6 +3,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumsComponent } from './breadcrums/breadcrums.component';
 import { NotpagefountComponent } from './notpagefount/notpagefount.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -17,6 +19,11 @@ import { NotpagefountComponent } from './notpagefount/notpagefount.component';
         SidebarComponent,
         BreadcrumsComponent,
         NotpagefountComponent
+    ],
+    imports: [
+        RouterModule,
+        CommonModule
+    
     ]
 
 

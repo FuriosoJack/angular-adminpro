@@ -18,17 +18,17 @@ export class SettingsService {
 
   guardarAjustes()
   {
-    console.log("Guardando ajustes en loc");
+    //console.log("Guardando ajustes en loc");
     localStorage.setItem('ajustes',JSON.stringify(this.ajustes));
   }
 
   cargarAjustes()
   {
     if( localStorage.getItem('ajustes') ){
-      console.log("Cargando ajustes en loc");
+    // console.log("Cargando ajustes en loc");
       this.ajustes = JSON.parse(localStorage.getItem('ajustes'));
     }else{
-      console.log("Cargando ajustes por defecto");
+      //console.log("Cargando ajustes por defecto");
     }
 
     this.aplicarTema(this.ajustes.tema);

@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { SettingsService } from '../../services/settings.service';
+import { SettingsService } from '../../services/service.index';
 
 
 @Component({
@@ -40,9 +40,9 @@ export class AccountSettingsComponent implements OnInit {
     let selectores: any = document.getElementsByClassName('selector');
 
     let tema = this._ajustes.ajustes.tema;
-    console.log("tema colocar: " + tema);
+    //console.log("tema colocar: " + tema);
     for(let ref of selectores){
-      console.log("atrbiute ");
+      //console.log("atrbiute ");
       if( ref.getAttribute('data-theme') === tema){
         ref.classList.add('working');
         break;
