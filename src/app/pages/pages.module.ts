@@ -10,6 +10,7 @@ import { IncrementadorComponent } from '../componentes/incrementador/incrementad
 import { ChartsModule } from 'ng2-charts';
 import { GraficaDonaComponent } from '../componentes/grafica-dona/grafica-dona.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
 @NgModule({
     declarations: [
         PagesComponent,
@@ -18,7 +19,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component,
         IncrementadorComponent,
         GraficaDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent
     ],
     exports: [ //Son accesados desde fuera de este modulo
         DashboardComponent,
